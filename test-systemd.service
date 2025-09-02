@@ -1,0 +1,9 @@
+[Unit]
+Description=A service for Jun DevOps Task's Bash Script execuition
+
+[Service]
+ExecStart=/jun-devops-task/test-bash.sh
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
